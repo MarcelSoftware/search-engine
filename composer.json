@@ -1,0 +1,9 @@
+{
+  "name": "sowas/search-engine",
+  "version": "1.0.0",
+  "autoload": {
+    "psr-4": {
+      "Sowas\\": "src"
+    }
+  }
+}
