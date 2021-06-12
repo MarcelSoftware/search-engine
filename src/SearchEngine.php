@@ -43,7 +43,9 @@ class SearchEngine
 
         arsort($matches);
 
-        if ($min_percentage !== null) {
+        $matches = array_diff($matches, [0]);
+
+        if ($min_percentage !== null && count($matches) > $out_count) {
             $matches = $this->getOnlyGoodMatches($matches, $min_percentage);
         }
 
